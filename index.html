@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/nubank.svg" alt="nubank">
+        <div class="inputs">
+            <label for="emprestimo">emprestimo</label>
+            <input type="text" id="emprestimo" name="emprestimo">
+        </div>
+        
+        <div class="inputs">
+            <label for="parcelas">parcelas</label>
+            <input type="text" id="parcelas" name="parcelas">
+        </div>
+        
+        <div class="inputs">
+            <label for="juros">juros</label>
+            <input type="text" id="juros" name="juros">
+        </div>
+        <div class="imprimir_resultado">
+            <button id="btn">calcular</button>
+            <p>valor a pagar:</p>
+            <span id="valor_total"></span>
+            <p>valor de cada parcela:</p>
+            <span id="valor_parcelas"></span>
+            <p>total de juros:</p>
+            <span id="valor_juros"></span>
+        </div>
+    </div>
+</body>
+</html>

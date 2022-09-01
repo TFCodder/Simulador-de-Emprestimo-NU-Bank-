@@ -1,0 +1,131 @@
+:root{
+    ---color-primary: #111;
+    ---color-secondary: #222;
+    ---color-tertiary: #333;
+    ---color-quaternary: #830dd1;
+    ---color-quinary: #aa30fb;
+    ---color-six: #35144b;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(---color-secondary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+img{
+    width: 300px;
+    height:auto;
+}
+.container{
+    border: 1px solid var(---color-quaternary);
+    box-shadow: 0 0 40px  inset var(---color-six);
+    width: 400px;
+    margin: 50px auto;
+    padding: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    transition: 1s;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    color: var(---color-quaternary);
+    text-align: center;
+    font-size: 24px;
+}
+input:hover{
+    box-shadow: 0 0 10px var(---color-quaternary);
+}
+input::selection{
+    color: var(---color-quaternary);
+    background-color: #111;
+    border-radius: 10px;
+}
+input:focus{
+    box-shadow: 0 0 10px var(---color-quinary);
+    outline: none;
+}
+label{
+    margin:10px 0 10px;
+    font-size: 24px;
+    color: var(---color-quaternary);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 50px;
+}
+p::selection, label::selection{
+    color: var(---color-quaternary);
+    background-color: #111;
+   
+}
+
+.imprimir_resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    background-color: var(---color-quaternary);
+    font-size: 24px;
+    margin-top: 20px;
+    color: #222;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: #222;
+    color: var(---color-quaternary);
+    box-shadow: 0 0 10px var(---color-quaternary);
+    cursor: pointer;
+    border-radius: 40px;
+}
+p{
+    animation: teste 2s linear infinite alternate;
+    margin:10px 0 10px;
+    font-size: 24px;
+    color: var(---color-quaternary);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 50px;
+    position: relative;
+}
+
+span{
+    border-bottom: 1px dashed var(---color-quaternary);
+    text-align: center;
+    font-size: 24px;
+    width: 200px;
+    height: 30px;
+    color: var(---color-quaternary);
+}
+@keyframes teste {
+0%{
+    color: var(---color-quaternary);
+    left:-50px;
+    
+}
+50%{
+    left: 50px;
+    color: var(---color-quinary);
+}
+100%{
+    color: var(---color-quaternary);
+    left: -50px;
+}
+}
